@@ -140,3 +140,12 @@ cython_debug/
 .pypirc
 
 /.idea/
+
+/data/
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+
+# environment
+.env
