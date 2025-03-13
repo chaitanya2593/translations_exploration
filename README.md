@@ -19,3 +19,9 @@ Local Setup
     source .venv/bin/activate
     pip install -r requirements.txt
     ```
+Streamlit deployment
+---
+1. Run the Streamlit application:
+```streamlit run app.py```
+2. Open the browser and go to http://localhost:8501/ to see the application.
+3. The application is now running locally.
