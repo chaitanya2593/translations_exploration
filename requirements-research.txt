@@ -1,6 +1,6 @@
 
 # Hugging Face
-transformers==4.48.0
+transformers==4.49.0
 accelerate==1.3.0
 sentencepiece==0.2.0
 
@@ -12,3 +12,5 @@ sacrebleu==2.5.1
 unbabel-comet==2.2.4
 evaluate==0.4.3
 git+https://github.com/google-research/bleurt.git
+
+huggingface-hub==0.28.1
