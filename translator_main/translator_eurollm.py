@@ -24,3 +24,19 @@ def translate_text(source_lang, target_lang , input_text):
         temperature=0  # Makes the output deterministic
     )
     return output['choices'][0]['text']
+
+
+def question_text(input_text):
+    '''
+    This function will translate the input text from source language to target language.
+    :param input_text: The text to translate
+    :return: The translated text
+    '''
+    output = llm(f"""Continue the following conversation:
+                        User:{input_text}.
+                        Assistant:""",
+        max_tokens=20000,  # Limit the response length
+        stop=["\n"],  # Stops generation at the first newline to avoid extra text
+        temperature=0.5  # Makes the output deterministic
+    )
+    return output['choices'][0]['text']
