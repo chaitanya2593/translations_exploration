@@ -1,6 +1,7 @@
 ### Import Packages ########################################
 import streamlit as st
 from translator_main.translator_eurollm import translate_text
+
 ### Setup ###################################################
 # Title of the app
 st.set_page_config(page_title="Translator App", page_icon="🌍", layout="wide")
@@ -34,4 +35,4 @@ if submit_button:
     output = translate_text(source_lang, target_lang, input_text)
     st.info(output)
 
-st.write("""Built with ❤️ by [Chaitanya Madduri](https://www.linkedin.com/in/v-s-chaitanya-madduri-2886447a/). Powered by Python 🐍 + EuroLLM+ + Streamlit 🎈""")
+st.write("""Built by [Chaitanya Madduri](https://www.linkedin.com/in/v-s-chaitanya-madduri-2886447a/). Powered by Python 🐍 + EuroLLM+ + Streamlit 🎈""")
